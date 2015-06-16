@@ -1,0 +1,26 @@
+[user]
+  email = lupinskij@gmail.com
+  name = Jeff Lupinski
+[push]
+  default = current
+[core]
+  excludesfile = ~/.gitignore
+[merge]
+  tool = vimdiff
+[mergetool]
+  keepBackup = true
+[color]
+  ui = true
+[alias]
+  tree = log --graph --all --decorate --pretty=oneline --abbrev-commit
+[rebase]
+  autosquash = true
+  autostash = true
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[filter "hawser"]
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
